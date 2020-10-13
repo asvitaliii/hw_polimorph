@@ -12,10 +12,7 @@ class NewFraction(object):
             lst = string.split(',')
             self.__numerator = int(lst[0]) * 10 ** len(lst[1]) + int(lst[1])
             self.__denominator = 10 ** len(lst[1])
-        if self.__numerator < 0 and self.__denominator < 0:
-            self.__numerator = self.__numerator * -1
-            self.__denominator = self.__denominator * -1
-        elif self.__denominator < 0:
+        if self.__denominator < 0:
             self.__numerator = self.__numerator * -1
             self.__denominator = self.__denominator * -1
 
